@@ -1,0 +1,34 @@
+{
+    "name": "seth/project",
+    "description": "computer security projects",
+    "authors": [
+        {
+            "name": "Seth Ballance",
+            "email": "seth.ballance@wallawalla.edu"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Source\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpunit --verbose -c phpunit.xml"
+        ]
+    }
+}
